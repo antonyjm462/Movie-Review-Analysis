@@ -5,11 +5,11 @@ This project intend to predict the sentiment for a number of movie reviews using
 ## Sentiment analysis on movie reviews
 
 ### Data
-Movie reviews from IMDb(Internet movie database).The dataset obtained from http://ai.stanford.edu/~amaas/data/sentiment/. The data set contains 50,000 movie reviews labeled whether they are positive or negative based on the content. For changing the preprocessed txt data to csv format, used the function as in http://psyyz10.github.io/2017/06/Sentiment/
+Movie reviews from IMDb(Internet movie database).The dataset obtained from http://ai.stanford.edu/~amaas/data/sentiment/. The data set contains 50,000 movie reviews labeled whether they are positive or negative based on the content. For changing the preprocessed txt data to csv format, used the function as in http://psyyz10.github.io/2017/06/Sentiment/.
 
 
 ### Approach
-A classification analysis on reviews to predict the sentiment positive or negative.The task is to predict the sentiment of 15,000 labeled movie reviews and use the remaining 35,000 reviews for training the supervised models.The techniques used include text preprocessing, normalization and in-depth analysis of models using python's built in packages and custom modules like text_normalizer and model_evaluation_utils
+A classification analysis on reviews to predict the sentiment positive or negative.The task is to predict the sentiment of 15,000 labeled movie reviews and use the remaining 35,000 reviews for training the supervised models.The techniques used include text preprocessing, normalization and in-depth analysis of models using python's built in packages and custom modules like text_normalizer and model_evaluation_utils.
 (Source Credit: Practical Machine Learning with Python: A Problem-Solver's Guide to Building Real-World Intelligent SystemsBook by Dipanjan Sarkar, Raghav Bali, and Tushar Sharma. https://github.com/dipanjanS/practical-machine-learning-with-python/tree/master/notebooks/Ch07_Analyzing_Movie_Reviews_Sentiment)
 
 ### Text pre-processing and normalization
