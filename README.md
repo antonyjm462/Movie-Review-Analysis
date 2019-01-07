@@ -9,11 +9,12 @@ Movie reviews from IMDb(Internet movie database).The dataset obtained from http:
 
 
 ### Approach
-A classification analysis on reviews to predict the sentiment positive or negative.The task is to predict the sentiment of 15,000 labeled movie reviews and use the remaining 35,000 reviews for training the supervised models.The techniques used include text preprocessing, normalization and in-depth analysis of models using python's built in packages and custom modules like text_normalizer and model_evaluation_utils(source credit: Practical Machine Learning with Python: A Problem-Solver's Guide to Building Real-World Intelligent SystemsBook by Dipanjan Sarkar, Raghav Bali, and Tushar Sharma. https://github.com/dipanjanS/practical-machine-learning-with-python/tree/master/notebooks/Ch07_Analyzing_Movie_Reviews_Sentiment)
+A classification analysis on reviews to predict the sentiment positive or negative.The task is to predict the sentiment of 15,000 labeled movie reviews and use the remaining 35,000 reviews for training the supervised models.The techniques used include text preprocessing, normalization and in-depth analysis of models using python's built in packages and custom modules like text_normalizer and model_evaluation_utils
+(Source Credit: Practical Machine Learning with Python: A Problem-Solver's Guide to Building Real-World Intelligent SystemsBook by Dipanjan Sarkar, Raghav Bali, and Tushar Sharma. https://github.com/dipanjanS/practical-machine-learning-with-python/tree/master/notebooks/Ch07_Analyzing_Movie_Reviews_Sentiment)
 
 ### Text pre-processing and normalization
 Normalizing movie review data includes creating functions to remove HTML tags,accented characters,expanding contractions,removing special characters,lemmatization to get the root word and removing stop words.Then using all these components and tie them together in the function called normalize_corpus which can be used to take a document corpus as input and return the same corpus with cleaned and normalized text documents.
-Reference - practical-machine-learning-with-python/notebooks/Ch07_Analyzing_Movie_Reviews_Sentiment/Text Normalization Demo.ipynb
+(Reference: practical-machine-learning-with-python/notebooks/Ch07_Analyzing_Movie_Reviews_Sentiment/Text Normalization Demo.ipynb
 
 ### Steps for supervised sentiment analysis
 * Prepare train and test datasets
@@ -28,10 +29,7 @@ The first step in this analysis is to combine the normalized train and test revi
 ### Topic Modeling
 For topic modeling we use the NMF class from scikit-learn and pyLDAvis for building interactive visualizations of topic models. Also some utility functions from topic-model-utils module to display the results in a clean format.
 
-Interactive visualization of positive review topics
-
-
-
+Interactive visualization of positive review topics:
 The visualizations shows 10 models from positive and negative reviews.The visualizations are interactive(if using jupyter notebook)and you can click on any of the bubbles representing topics in the Intertopic Distance Map on the left and see the most relevant terms in each of the topics in the right bar chart. Multi-Dimension Scaling (MDS) is used in the plot on the left shows similar topics should be close to one another and dissimilar topics should be far apart.The size of each topic bubble is based on the frequency of that topic and its components in the overall corpus. The visualization on the right shows the top terms.When no topic is selected it shows the top 15 most salient topics in the corpus.The term's saliency is defined as a measure of how frequently the term appears the corpus and its distinguishing factor when used to distinguish between topics.The relevancy metric can be changed based on the slider on top of the bar chart.
 
 ### Machine learning models and evaluation
